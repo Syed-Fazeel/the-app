@@ -175,7 +175,7 @@ section h1 {
 
 /* Dark overlay per user's spec */
 .hero-overlay {
-  background-color: rgba(0, 0, 0, .65);
+  background-color: rgba(0, 0, 0, .80);
   content: "";
   height: 100%;
   left: 0;
@@ -229,14 +229,13 @@ section h1 {
 /* Client slider (marquee) */
 .client-slider {
   position: relative;
-  /* placed in normal flow below hero */
   width: 100%;
-  padding: 18px 0;
+  padding: 20px 0;
   display: flex;
   align-items: center;
-  background: #ffffff;
-  /* white background so black logos are visible */
-  border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+  background: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   z-index: 2;
   overflow: hidden;
 }
@@ -251,15 +250,18 @@ section h1 {
 
 .client {
   opacity: 1;
-  color: #000;
+  color: rgba(255, 255, 255, 0.4);
   font-weight: 700;
-  white-space: nowrap
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .client-logo {
   display: inline-block;
   padding: 6px 12px;
-  color: #000
+  color: inherit;
 }
 
 @keyframes client-scroll {
@@ -659,8 +661,11 @@ main>* {
 
 /* Case Studies Section */
 .case-studies-section {
-  background-color: #ffffff;
-  color: #000000;
+  background:
+    radial-gradient(ellipse 16% 82% at 6% 10%, rgb(175 197 43 / 30%) 0%, transparent 113%),
+    radial-gradient(ellipse 30% 70% at 90% 50%, rgba(255, 193, 7, 0.22) 0%, transparent 100%),
+    #0d0d0d;
+  color: #ffffff;
   padding: 100px 0;
 }
 
@@ -680,12 +685,12 @@ main>* {
   font-size: 56px;
   font-weight: 800;
   margin: 0;
-  color: #000000;
+  color: #ffffff;
   letter-spacing: -2px;
 }
 
 .cs-link {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
@@ -724,7 +729,7 @@ main>* {
   border-radius: 24px;
   overflow: hidden;
   margin-bottom: 32px;
-  background-color: #f4f4f4;
+  background-color: #1a1a1a;
 }
 
 .cs-image {
@@ -827,7 +832,7 @@ main>* {
 .tulsa-text span {
   font-weight: 500;
   font-size: 9px;
-  color: #666;
+  color: rgba(255, 255, 255, 0.45);
   text-transform: none;
 }
 
@@ -847,7 +852,7 @@ main>* {
 
 .cs-card-desc {
   font-size: 16px;
-  color: #4b5563;
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1.6;
   margin: 0;
   max-width: 90%;
@@ -880,9 +885,12 @@ main>* {
 
 /* Journey Section */
 .journey-section {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 20px 0 40px 0;
+  background:
+    radial-gradient(163% 145% at 12% 115%, rgb(50, 38, 2) -17%, transparent 70%),
+    radial-gradient(55% 100% at 100% 35%, rgba(255, 193, 7, 0.45) 0%, transparent 78%),
+    linear-gradient(203deg, rgb(40, 30, 1) 0%, rgb(255, 193, 7) 100%);
+  color: #fff;
+  padding: 60px 0;
 }
 
 .journey-content {
@@ -895,7 +903,7 @@ main>* {
   margin: 0 0 24px 0;
   letter-spacing: -1.5px;
   line-height: 1.1;
-  color: #000000;
+  color: #fff;
 }
 
 .journey-desc {
@@ -904,7 +912,7 @@ main>* {
   margin-bottom: 80px;
   font-weight: 400;
   line-height: 32px;
-  color: rgb(11, 12, 13);
+  color: #fff;
   margin-bottom: 35px;
 }
 
@@ -923,7 +931,7 @@ main>* {
   font-size: 60px;
   font-weight: 700;
   line-height: 65px;
-  color: rgb(11, 12, 13);
+  color: #fff;
   margin-bottom: 12px;
 }
 
@@ -932,7 +940,7 @@ main>* {
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
-  color: rgb(11, 12, 13);
+  color: #ffffff;
   margin: 0;
   white-space: nowrap;
 }
@@ -1283,10 +1291,15 @@ main>* {
 
 /* Technologies Section */
 .tech-section {
-  background-color: #ffffff;
+  background:
+    radial-gradient(ellipse 75% 65% at 105% 100%, rgba(255, 193, 7, 0.55) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 55% at -5% 15%, rgba(175, 197, 43, 0.45) 0%, transparent 60%),
+    radial-gradient(ellipse 45% 70% at 50% 110%, rgba(255, 193, 7, 0.25) 0%, transparent 70%),
+    #060606;
   padding: 100px 0 0 0;
-  color: #0b0c0d;
+  color: #ffffff;
 }
+
 
 .tech-header {
   max-width: 800px;
@@ -1300,7 +1313,7 @@ main>* {
   line-height: 1.1;
   margin: 0 0 20px 0;
   letter-spacing: -1.5px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .tech-desc {
@@ -1308,7 +1321,7 @@ main>* {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: rgb(11, 12, 13);
+  color: rgba(255, 255, 255, 0.55);
   margin-top: 40px;
 }
 
@@ -1342,7 +1355,7 @@ main>* {
   padding: 18px 20px 14px 24px;
   font-size: 24px;
   font-weight: 400;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
   position: relative;
   transition: all 0.2s ease;
@@ -1350,14 +1363,14 @@ main>* {
 }
 
 .tech-tab-btn:hover {
-  color: #111827;
-  background-color: #f9fafb;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 .tech-tab-btn.active {
-  color: #111827;
+  color: #ffffff;
   font-weight: 700;
-  background-color: #f3f4f6;
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .tab-indicator {
@@ -1385,7 +1398,7 @@ main>* {
 .tech-group-title {
   font-size: 24px;
   font-weight: 700;
-  color: #111827;
+  color: rgba(255, 255, 255, 0.7);
   margin: 0 0 20px 0;
 }
 
@@ -1402,13 +1415,13 @@ main>* {
   padding: 12px 20px;
   border: none;
   border-radius: 50px;
-  background-color: #f3f4f6;
+  background-color: rgba(255, 255, 255, 0.07);
   transition: all 0.2s ease;
   cursor: pointer;
 }
 
 .tech-card:hover {
-  background-color: #e5e7eb;
+  background-color: rgba(255, 193, 7, 0.14);
   transform: translateY(-2px);
 }
 
@@ -1422,13 +1435,13 @@ main>* {
 }
 
 .tech-icon-wrapper svg path {
-  stroke: #0b0c0d;
+  stroke: rgba(255, 255, 255, 0.8);
 }
 
 .tech-name {
   font-size: 15px;
   font-weight: 400;
-  color: #0b0c0d;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 @media (max-width: 900px) {
@@ -1460,19 +1473,19 @@ main>* {
 
   .tech-tab-btn.active {
     background-color: transparent;
-    color: #0b0c0d;
+    color: #ffffff;
     font-weight: 700;
     border-bottom: 2px solid #FFC107;
   }
 
   .tech-tab-btn:hover {
     background-color: transparent;
-    color: #0b0c0d;
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .tech-tab-btn.active:hover {
     background-color: transparent;
-    color: #0b0c0d;
+    color: #ffffff;
   }
 
   .tech-title {
@@ -1486,7 +1499,7 @@ main>* {
 
 /* CTA Banner Section */
 .cta-banner-section {
-  background-color: #ffffff;
+  background-color: #0e0e0e;
   padding: 100px 0;
   display: flex;
   justify-content: center;
@@ -1496,8 +1509,8 @@ main>* {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f8f9fa;
-  border: 1px solid #e5e7eb;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 100px;
   padding: 12px 12px 12px 40px;
   max-width: 1200px;
@@ -1509,7 +1522,7 @@ main>* {
   font-family: manrope, "system-ui", Helvetica, Arial, "sans-serif";
   font-size: 32px;
   font-weight: 700;
-  color: #111827;
+  color: #ffffff;
   margin: 0;
   letter-spacing: -0.5px;
 }
@@ -1519,8 +1532,8 @@ main>* {
 }
 
 .cta-banner-btn {
-  background-color: #0b1220;
-  color: #ffffff;
+  background-color: #FFC107;
+  color: #0a0a0a;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
@@ -1532,7 +1545,7 @@ main>* {
 
 .cta-banner-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(255, 193, 7, 0.35);
 }
 
 @media (max-width: 768px) {
@@ -1562,7 +1575,7 @@ main>* {
 /* Blog Section */
 .blog-section {
   padding: 0px 0px 100px 0;
-  background-color: #ffffff;
+  background-color: #0b0b0b;
 }
 
 .blog-header {
@@ -1579,21 +1592,20 @@ main>* {
   line-height: 1.1;
   margin: 0;
   letter-spacing: -1.5px;
-  color: #0b0c0d;
+  color: #ffffff;
 }
 
 .view-all-link {
-  color: #111827;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   transition: opacity 0.2s;
   padding-bottom: 8px;
-  /* rough alignment */
 }
 
 .view-all-link:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .blog-grid {
@@ -1640,16 +1652,16 @@ main>* {
 }
 
 .blog-category {
-  color: #111827;
+  color: #FFC107;
 }
 
 .blog-meta-dot {
-  color: #9ca3af;
+  color: rgba(255, 255, 255, 0.3);
   font-size: 10px;
 }
 
 .blog-date {
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .blog-card-title {
@@ -1657,7 +1669,7 @@ main>* {
   font-weight: 500;
   line-height: 1.4;
   margin: 0;
-  color: #111827;
+  color: #ffffff;
   letter-spacing: -0.5px;
 }
 
@@ -1670,7 +1682,7 @@ main>* {
 /* Trigger Section */
 .trigger-section {
   padding: 90px 0 110px 0;
-  background-color: #ffffff;
+  background-color: #111111;
   text-align: center;
 }
 
@@ -1681,7 +1693,7 @@ main>* {
 
 .trigger-subtitle {
   font-size: 24px;
-  color: #4b5563;
+  color: rgba(255, 255, 255, 0.45);
   margin: 0 0 16px 0;
 }
 
@@ -1692,13 +1704,13 @@ main>* {
   line-height: 1.05;
   margin: 0 0 40px 0;
   letter-spacing: -3px;
-  color: #0b0c0d;
+  color: #ffffff;
 }
 
 .trigger-btn {
   display: inline-block;
-  background-color: #0b1220;
-  color: #ffffff;
+  background-color: #FFC107;
+  color: #0a0a0a;
   font-size: 15px;
   font-weight: 700;
   padding: 16px 36px;
@@ -1709,7 +1721,7 @@ main>* {
 
 .trigger-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(255, 193, 7, 0.35);
 }
 
 /* Footer Section */
@@ -2139,7 +2151,7 @@ main>* {
 /* Industries Section */
 .industries-section {
   padding: 120px 0;
-  background-color: #ffffff;
+  background-color: #0d0d0d;
 }
 
 .industries-header {
@@ -2154,7 +2166,7 @@ main>* {
   line-height: 1.1;
   margin: 0 0 24px 0;
   letter-spacing: -1.5px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .industries-desc {
@@ -2162,7 +2174,7 @@ main>* {
   font-weight: 400;
   padding-top: 25px;
   line-height: 32px;
-  color: rgb(11, 12, 13);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .industries-grid {
@@ -2172,8 +2184,8 @@ main>* {
 }
 
 .industry-card {
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
   padding: 30px 25px 25px 25px;
   transition: all 0.3s ease;
@@ -2182,20 +2194,20 @@ main>* {
 
 .industry-card:hover {
   border-color: #FFC107;
-  box-shadow: 0 0 0 1px #FFC107, 0 10px 40px rgba(23, 201, 100, 0.08);
+  box-shadow: 0 0 0 1px #FFC107, 0 10px 40px rgba(255, 193, 7, 0.08);
   transform: translateY(-4px);
 }
 
 .industry-name {
   font-size: 32px;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   margin: 0 0 20px 0;
 }
 
 .industry-text {
   font-size: 20px;
-  color: #000;
+  color: rgba(255, 255, 255, 0.55);
   line-height: 1.4;
   margin: 0;
 }
